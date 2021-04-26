@@ -2,7 +2,7 @@
 
  let username =prompt('what is your name ?');
  console.log(username);
- alert(" Hello " + username + " ! My name is Heba, Let's start with a short quiz not to determine your level but only to increase your knowledge ^.^");
+ alert(" Hello " + username + " ! My name is Heba, Let's start with a short quiz not to determine your level but only to increase your knowledge ^.^ , please answer them for just yes/no ");
 
  let Q1 = prompt('Does the computer understand human language?');
 
