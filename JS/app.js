@@ -115,17 +115,16 @@ console.log(username);
  console.log(Q6);
  var i=0; 
  while (i < 4) {
-    if(Q6==37) {
-        alert("correct, you are awesome");
+    if(Q6==37) {alert("correct, you are awesome");
     score++;
 break; }
        
         else if (Q6 < 37){
     Q6= prompt("No, try to higher number");
-    break;
+
 } else{
     Q6= prompt("No, try to lower number");
-    ;
+    
 }
 i++;
 }
