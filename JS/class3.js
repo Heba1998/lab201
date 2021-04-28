@@ -115,7 +115,8 @@ Q6 = Number(Q6);
 console.log(Q6);
 var i=0; 
 while (i < 4) {
-   if(Q6==37) {alert("correct, you are awesome");
+   if(Q6==37) {
+       alert("correct, you are awesome");
    score++;
 break; }
       
@@ -132,7 +133,7 @@ alert("the correct answer is :37")
 
 
 
-   let myfavnum = [99, 65, 9, 100, 55, 8, 4, 5, 25];
+   let myfavnum = [99, 65, 5, 25];
 
    let Q7 = prompt ("last question, Guess my favorite number");
 
@@ -140,14 +141,13 @@ alert("the correct answer is :37")
    console.log(Q7);
    var j=0; 
    while (j < 6) {
-    if(myfavnum.indexOf(Q7) !== -1)
+    if(myfavnum.includes(Q7))
      {alert("correct, you are awesome");
-   score++;
-break; }
+     score++;
+     break; }
          
          else{
-          
-                 Q7= prompt("No, you remain " +(5-j)+ " attempts to guess the correct answer, so try again ");
+             Q7= prompt("No, you remain " +(5-j)+ " attempts to guess the correct answer, so try again ");
              }
            
           j++;
