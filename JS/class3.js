@@ -120,10 +120,10 @@ while (i < 4) {
 break; }
       
        else if (Q6 < 37){
-   Q6= prompt("No, try to higher number");
+   Q6= prompt("No, too low");
 
 } else{
-   Q6= prompt("No, try to lower number");
+   Q6= prompt("No, too high");
    
 }
 i++;
@@ -134,13 +134,14 @@ alert("the correct answer is :37")
 
    let myfavnum = [99, 65, 9, 100, 55, 8, 4, 5, 25];
 
-   let Q7 = prompt ("last question, Guess my favorite number from this list " + myfavnum);
+   let Q7 = prompt ("last question, Guess my favorite number");
 
    Q7 = Number(Q7);
    console.log(Q7);
    var j=0; 
    while (j < 6) {
-   if (Q7==25) {alert("correct, you are awesome");
+    if(myfavnum.indexOf(Q7) !== -1)
+     {alert("correct, you are awesome");
    score++;
 break; }
          
@@ -152,7 +153,7 @@ break; }
           j++;
 
 }
-alert("my favorite number is :25")
+alert("my favorite number is :" + myfavnum)
    
 alert("your score is : " + score + ".......You are amazing! thank you " + username );
 
