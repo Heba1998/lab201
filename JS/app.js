@@ -113,7 +113,7 @@ console.log(username);
  
  Q6 = Number(Q6);
  console.log(Q6);
- var i=0; 
+ let i=0; 
  while (i < 4) {
     if(Q6==37) {alert("correct, you are awesome");
     score++;
@@ -138,7 +138,7 @@ alert("the correct answer is :37")
 
     Q7 = Number(Q7);
     console.log(Q7);
-    var i=0; 
+    let i=0; 
     while (i < 6) {
     if (Q7==25) {alert("correct, you are awesome");
     score++;
