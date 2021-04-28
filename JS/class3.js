@@ -138,18 +138,18 @@ alert("the correct answer is :37")
 
    Q7 = Number(Q7);
    console.log(Q7);
-   let i=0; 
-   while (i < 6) {
+   let j=0; 
+   while (j < 6) {
    if (Q7==25) {alert("correct, you are awesome");
    score++;
 break; }
          
          else{
           
-                 Q7= prompt("No, you remain " +(5-i)+ " attempts to guess the correct answer, so try again ");
+                 Q7= prompt("No, you remain " +(5-j)+ " attempts to guess the correct answer, so try again ");
              }
            
-          i++;
+          j++;
 
 }
 alert("my favorite number is :25")
