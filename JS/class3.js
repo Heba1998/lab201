@@ -1,8 +1,8 @@
 'use strict';
 let score=0;
-
-function f1(){
 let username =prompt('what is your name ?');
+function f1(){
+
 while(!username){
     username=prompt("please, enter your name")
 }
@@ -157,29 +157,33 @@ f7();
 
 function f8(){
 
-   let myfavnum = [99, 65, 5, 25];
+ 
+ let correct = false;
+ let myfavnum = [99, 65, 3];
+ 
+ for (let j = 0; j < 6; j++) {
 
-   let Q7 = prompt ("last question, Guess my favorite number");
-
-   Q7 = Number(Q7);
-   console.log(Q7);
-   var j=0; 
-   while (j < 6) {
-    if(myfavnum.includes(Q7))
-     {alert("correct, you are awesome");
-     score++;
-     break; }
-         
-         else{
-             Q7= prompt("No, you remain " +(5-j)+ " attempts to guess the correct answer, so try again ");
-            
+    let Q7 = prompt ("last question, Guess my favorite number");
+    Q7 = Number(Q7);
+    console.log(Q7);
+ 
+         for (let i = 0; i < myfavnum.length; i++) {
+             if (Q7 == myfavnum[i]) {
+                 alert('correct answer');
+                 score++;
+                 correct = true;
+                  j = 7;
+                 break;
              }
-           j++;
-          
+        
+         }
 
-}
-alert("my favorite number is :" + myfavnum)
-}
+         if (correct) {
+             break;
+         }
+     }
+     alert("My favorite number is :" + myfavnum);
+    }
 f8();
 alert("your score is : " + score + ".......You are amazing! thank you " + username );
 
