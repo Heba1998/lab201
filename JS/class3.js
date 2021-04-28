@@ -1,5 +1,7 @@
 'use strict';
 let score=0;
+
+
 let username =prompt('what is your name ?');
 while(!username){
     username=prompt("please, enter your name")
@@ -10,6 +12,9 @@ alert(" Hello " + username + " ! My name is Heba, Let's start with a short quiz 
 
 
 console.log(username);
+
+
+
 
 
 let Q1 = prompt('Does the computer understand human language?');
@@ -31,6 +36,8 @@ switch (Q1.toUpperCase()) {
 }
 
 
+
+
 let Q2 = prompt('Is 1 yes or no in binary?');
 
 switch (Q2.toUpperCase()) {
@@ -50,6 +57,7 @@ switch (Q2.toUpperCase()) {
 }
 
 
+
 let Q3 = prompt('2 is 10 in binary?');
 
 switch (Q3.toUpperCase()) {
@@ -66,6 +74,7 @@ switch (Q3.toUpperCase()) {
         alert("Wrong answer");
         break 
 }
+
 
 
 
@@ -90,6 +99,8 @@ switch (Q4.toUpperCase()) {
 
 
 
+
+
 let Q5 = prompt('Letters are not converted to binary in a computer like a numbers ?');
 
 switch (Q5.toUpperCase()) {
@@ -107,6 +118,8 @@ switch (Q5.toUpperCase()) {
         alert("Wrong answer");
         break;
 }
+
+
 
 
 let Q6 = prompt('In this question, please, enter a number, Guess the number in the decimal corresponds to this representation in the binary 0100101?');
@@ -130,6 +143,9 @@ break; }
 i++;
 }
 alert("the correct answer is :37")
+
+
+
 
 
 
