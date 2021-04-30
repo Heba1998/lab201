@@ -9,9 +9,6 @@ while(!username){
 
 alert(" Hello " + username + " ! My name is Heba, Let's start with a short quiz not to determine your level but only to increase your knowledge ^.^ , please answer them for just yes/no ");
 
-
-
-console.log(username);
 }
 f1();
 
@@ -23,7 +20,7 @@ let Q1 = prompt('Does the computer understand human language?');
 switch (Q1.toUpperCase()) {
     case 'N':
     case 'NO':    
-        console.log('Correct answer ');
+       
         alert("correct answer");
         score++;
         break;
@@ -31,8 +28,8 @@ switch (Q1.toUpperCase()) {
 
     case 'YES':
     case 'Y':
-        console.log('Wrong answer');
-        alert("Wrong answer");
+      
+        alert("Wrong answer, the correct answer is : NO");
         break;
 }
 }
@@ -45,7 +42,7 @@ let Q2 = prompt('Is 1 yes or no in binary?');
 switch (Q2.toUpperCase()) {
     case 'YES':
     case 'Y':
-        console.log('Correct answer ');
+      
         alert("correct answer");
         score++;
         break;
@@ -53,8 +50,8 @@ switch (Q2.toUpperCase()) {
 
     case 'NO':
     case 'N':
-        console.log('Wrong answer');
-        alert("Wrong answer");
+       
+        alert("Wrong answer, the correct answer is : YES");
         break;  
 }
 }
@@ -67,15 +64,15 @@ let Q3 = prompt('2 is 10 in binary?');
 switch (Q3.toUpperCase()) {
     case 'YES':
     case 'Y':
-        console.log('Correct answer ');
+        
         alert("correct answer");
         score++;
         break;
 
     case 'NO':
     case 'N':
-        console.log('Wrong answer');
-        alert("Wrong answer");
+      
+        alert("Wrong answer, the correct answer is : YES");
         break 
 }
 }
@@ -88,7 +85,7 @@ let Q4 = prompt('In binary, is the answer of the following question correct  10+
 switch (Q4.toUpperCase()) {
     case 'YES':
     case 'Y':
-        console.log('Correct answer ');
+      
         alert("correct answer");
         score++;
         break;
@@ -96,8 +93,8 @@ switch (Q4.toUpperCase()) {
 
     case 'NO':
     case 'N':
-        console.log('Wrong answer');
-        alert("Wrong answer");
+    
+        alert("Wrong answer, the correct answer is : YES");
         break; 
 }
 }
@@ -112,7 +109,7 @@ let Q5 = prompt('Letters are not converted to binary in a computer like a number
 switch (Q5.toUpperCase()) {
     case  'NO':
     case  'N' :
-       console.log('Correct answer ');
+      
         alert("correct answer");
         score++;
         break;
@@ -120,8 +117,8 @@ switch (Q5.toUpperCase()) {
 
     case 'YES':
     case 'Y':
-        console.log('Wrong answer');
-        alert("Wrong answer");
+        
+        alert("Wrong answer, the correct answer is : NO");
         break;
 }
 }
@@ -132,8 +129,8 @@ function f7 (){
 let Q6 = prompt('In this question, please, enter a number, Guess the number in the decimal corresponds to this representation in the binary 0100101?');
 
 Q6 = Number(Q6);
-console.log(Q6);
-var i=0; 
+
+let i=0; 
 while (i < 4) {
    if(Q6==37) {
        alert("correct, you are awesome");
